@@ -1,0 +1,185 @@
+
+
+
+// COLORS:
+$color-bg: #111a28;
+$color-white: #fff;
+$color-green: #00cf5d;
+
+
+
+// Base CSS
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.7;
+    background-color: $color-bg;
+    color: $color-white;
+}
+
+
+a, a:hover {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 3rem;
+    font-weight: 700;
+    color: $color-white;
+    transition: all .3s;
+
+
+    &:hover {
+        color: $color-green;
+    }
+}
+
+
+.nav {
+
+    &__item {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__list {
+        display: inline-block;
+    }
+
+    &__link,
+    &__link:visited,
+    &__link:link {
+        display: block;
+        color: $color-white;
+        font-size: 1.8rem;
+        font-weight: 500;
+        padding: 1rem 2rem;
+        border-bottom: 1px solid transparent;
+        transition: all .3s;
+
+
+        &:hover {
+            color: $color-green;
+            border-bottom: 1px solid currentColor;
+        }
+    }
+
+
+}
+
+
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.hero {
+    padding: 5rem;
+
+    &__text {
+        font-size: 5rem;
+
+        &--sub {
+            display: block;
+            font-size: 60%;
+            opacity: .65;
+        }
+    }
+}
+
+
+
+.boxed-btn {
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    background-color: $color-green;
+    color: $color-white;
+    border-radius: .5rem;
+    margin-top: 3rem;
+    transition: all .3s;
+
+    &:hover {
+        color: $color-bg;
+    }
+}
+
+
+.bordered-btn {
+    display: inline-block;
+    padding: .5rem 1rem;
+    color: #00cf5d;
+    border-bottom: 2px solid currentColor;
+    transition: all .3s;
+    margin-top: 1rem;
+
+    &:hover {
+        color: $color-white;
+    }
+}
+
+
+
+
+.dummy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+
+    &__left,
+    &__right  {
+        padding: 3rem;
+    }
+
+
+
+    &__heading {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    padding: 2rem 0;
+}
