@@ -1,13 +1,52 @@
 import React from "react";
+import { ShepherdTour, ShepherdTourContext } from 'react-shepherd'
+import steps from './Steps';
 import './Style.scss';
 
 
 const App = () => {
+
+
+
+  const tourOptions = {
+    defaultStepOptions: {
+      cancelIcon: {
+        enabled: true
+      }
+    },
+    useModalOverlay: true
+  };
+
+  
+  
+  // start tour
+  function Button() {
+    const tour = React.useContext(ShepherdTourContext);
+  
+    return (
+      <button className="boxed-btn" onClick={tour.start}>
+        Start Tour
+      </button>
+    );
+  }
+
+
+
+  let x =   React.useContext(ShepherdTourContext);
+  React.useEffect(() => {
+  // console.log here
+
+  
+  },[])
+
+
+
   return (
+    <ShepherdTour tourOptions={tourOptions} steps={steps}>
     <div className="container">
       <header className="header">
         <div className="logo">
-          <a href="/">React Shepherd</a>
+          <a className="logo__img" href="/">React Shepherd</a>
         </div>
         <nav className="nav">
           <ul className="nav__item">
@@ -20,6 +59,7 @@ const App = () => {
         </nav>
       </header>
       <section className="hero-section">
+        <Button/>
         <div className="hero">
           <h1 className="hero__text">
           Lorem ipsum dolor sit.
@@ -44,6 +84,7 @@ const App = () => {
         <p className="footer__copyright">All rights reserved &copy; Shaon Kabir</p>
       </footer>
     </div>
+    </ShepherdTour>
   );
 };
 
