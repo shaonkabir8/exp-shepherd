@@ -14,7 +14,7 @@ const App = () => {
         enabled: true
       }
     },
-    useModalOverlay: true
+    useModalOverlay: false
   };
 
   
