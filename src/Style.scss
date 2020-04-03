@@ -3,6 +3,7 @@
 
 // COLORS:
 $color-bg: #111a28;
+$color-bg-light: rgb(30, 46, 70);
 $color-white: #fff;
 $color-green: #00cf5d;
 
@@ -182,4 +183,48 @@ a, a:hover {
     align-items: center;
     margin-top: 4rem;
     padding: 2rem 0;
+}
+// Shepherd Modal Style
+
+.shepherd-content {
+    background-color: $color-bg-light;
+    padding: 1rem;
+    box-shadow: 0 1rem 3rem rgba(#000, .4);
+
+    button {
+        display: inline-block;
+        outline: none;
+        border: none;
+        padding: 1rem 2rem;
+        margin: 0 .5rem;
+        background-color: $color-green;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .shepherd-text {
+        margin: 1rem 0;
+    }
+
+    .shepherd-header {
+        position: relative;
+    }
+
+    .shepherd-cancel-icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: .5rem;
+        background: none;
+        color: red;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .shepherd-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: .5rem;
+    }
 }
