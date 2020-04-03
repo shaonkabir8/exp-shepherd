@@ -1,13 +1,14 @@
 import React from "react";
 import { ShepherdTour, ShepherdTourContext } from 'react-shepherd'
-import steps from './Steps';
-import './Style.scss';
+import steps from './steps'
+import '../styles/Style.scss';
 
 
 const App = () => {
 
 
 
+  // tour options
   const tourOptions = {
     defaultStepOptions: {
       cancelIcon: {

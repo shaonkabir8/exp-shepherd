@@ -151,7 +151,7 @@ const steps = [
   {
     attachTo: {
       element: ".dummy .dummy__left .dummy__heading",
-      on: "right"
+      on: "top"
     },
     beforeShowPromise: function() {
         return new Promise(function(resolve) {
